@@ -1,0 +1,3 @@
+/home/kike/Documentos/3Grei/2Cuatri/Compiladores/Practica2Tema5/cmake-build-debug/CMakeFiles/Practica2Tema5.dir
+/home/kike/Documentos/3Grei/2Cuatri/Compiladores/Practica2Tema5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kike/Documentos/3Grei/2Cuatri/Compiladores/Practica2Tema5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
