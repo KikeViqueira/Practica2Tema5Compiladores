@@ -1,8 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <sys/time.h>
 
 // #define ITER 7000000
-#define ITER 1000000
+//#define ITER 1000000
+#define ITER 8000
+
 
 int main(int argc, char **argv) {
 
@@ -29,7 +32,7 @@ int main(int argc, char **argv) {
 
     gettimeofday(&final, NULL);
     tiempo = (final.tv_sec - inicio.tv_sec + (final.tv_usec - inicio.tv_usec) / 1.e6);
-    // double tiempoFinal = tiempo / ITER;
+    double tiempoFinal = tiempo / ITER;
 
-    printf("Tiempo consumido por el codigo medido: %f\n", tiempo);
+    printf("%f\n", tiempoFinal);
 }
