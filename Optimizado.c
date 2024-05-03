@@ -1,12 +1,18 @@
 #include <stdio.h>
 #include <sys/time.h>
 
-#define ITER 5000
-#define N 1000
+// #define ITER 7000000
+#define ITER 1000000
 
 int main(int argc, char **argv) {
 
     int i, j, a, b = 0;
+
+    int N;
+
+    if (argc > 1) {
+        N = atoi(argv[1]);
+    }
 
     // Variables necesarias para medir el tiempo de manera correcta
     struct timeval inicio, final;

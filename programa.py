@@ -4,7 +4,7 @@ import subprocess
 from openpyxl import Workbook
 
 #Nombre del archivo execel donde se guardaran los datos
-archivo = 'medidas.xlsx'
+archivo = 'medidas2.xlsx'
 
 #Función para ejecutar el script ./nopt y capturar sus resultadps
 def ejecutar_script(i):
