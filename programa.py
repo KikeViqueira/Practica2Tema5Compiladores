@@ -25,7 +25,7 @@ def main():
         ws.append(['i'] + [str(N) for N in range(100,5001,100)])
         for i in range(1, 11):
           resultados = ejecutar_script(1) #Ejecutamos el script ./nopt y capturamos sus resultados
-          ws.append([1]+resultados) #Escribimos los resultados en el archivo excel
+          ws.append([i]+resultados) #Escribimos los resultados en el archivo excel
         wb.save(archivo) #Guardamos el archivo excel
         print(f'Archivo {archivo} se ha actualizado con éxito')
 

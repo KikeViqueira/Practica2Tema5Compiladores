@@ -3,7 +3,7 @@
 #include <sys/time.h>
 
 // #define ITER 7000000
-#define ITER 8000
+#define ITER 80000
 
 int main(int argc, char **argv) {
 
