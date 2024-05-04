@@ -3,7 +3,7 @@
 #include <sys/time.h>
 
 // #define ITER 7000000
-#define ITER 80000
+#define ITER 500
 
 int main(int argc, char **argv) {
 
@@ -32,5 +32,5 @@ int main(int argc, char **argv) {
     double tiempoFinal = tiempo / ITER;
 
     // printf("Tiempo consumido por el codigo medido: %f\n", tiempo);//De esta manera solo medimos el tiempo del bucle N
-    printf("%f\n", tiempoFinal); // De esta manera solo medimos el tiempo del bucle N
+    printf("%f\n", tiempo); // De esta manera solo medimos el tiempo del bucle N
 }

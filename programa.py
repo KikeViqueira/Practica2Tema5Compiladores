@@ -9,7 +9,7 @@ archivo = 'medidas2.xlsx'
 #Función para ejecutar el script ./nopt y capturar sus resultadps
 def ejecutar_script(i):
   resultados = []
-  for N in range( 100, 5001, 100):
+  for N in range( 10000, 500001, 10000):
     #Ejecutamos el script ./nopt con el valor de N actual y capturamos su salida
     salida = subprocess.run(['./nopt', str(N)] ,capture_output=True, text=True)
     tiempo= salida.stdout.strip() #extraemos el tiempo de ejecucuión limpiando los espacios en blanco
@@ -22,7 +22,7 @@ def main():
         wb = Workbook() #Creamos un nuevo libro de trabajo
         ws = wb.active #Obtenemos la hoja activa
         #Escribimos los encabezados
-        ws.append(['i'] + [str(N) for N in range(100,5001,100)])
+        ws.append(['i'] + [str(N) for N in range(10000, 500001, 10000)])
         for i in range(1, 11):
           resultados = ejecutar_script(1) #Ejecutamos el script ./nopt y capturamos sus resultados
           ws.append([i]+resultados) #Escribimos los resultados en el archivo excel
