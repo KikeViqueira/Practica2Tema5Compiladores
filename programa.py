@@ -3,7 +3,7 @@ import sys
 import subprocess
 from openpyxl import Workbook
 
-#Nombre del archivo execel donde se guardaran los datos
+#Nombre del archivo excel donde se guardaran los datos
 archivo = 'medidasOpt1M.xlsx'
 
 #Función para ejecutar el script ./nopt y capturar sus resultadps
